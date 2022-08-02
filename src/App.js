@@ -1,25 +1,35 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import FilmBox from './containers/FilmBox';
+
+
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+
+      <h1>Upcoming film releases for UK</h1>
+      <FilmBox/>
+
+
+
+
+
+
+
+
+    <a href="https://www.imdb.com/calendar/?region=gb" target="_blank"> <h2> Upcoming releases</h2></a>
+    </>
+
+
+
+
   );
-}
+
+  
+};
 
 export default App;
